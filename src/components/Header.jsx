@@ -1,9 +1,12 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-const Header = () => {
+const Header = ({ showAddToggle }) => {
   return (
     <section className="header">
-      <button className="header-btn main-black-color">add</button>
+      <button className="header-btn main-black-color" onClick={showAddToggle}>
+        add
+      </button>
       <h1 className="header-title">Todo Lists</h1>
       <button className="header-btn main-red-color">Clear</button>
     </section>
