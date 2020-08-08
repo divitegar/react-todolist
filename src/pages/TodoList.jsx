@@ -23,7 +23,7 @@ const TodoList = () => {
   const showAddToggle = () => setShowAdd(!showAdd);
   return (
     <Paper>
-      <Header showAddToggle={showAddToggle} />
+      <Header showAddToggle={showAddToggle} showAdd={showAdd} />
       <TodoForm addTodo={addTodo} showAdd={showAdd} />
       <Todos todos={todos} />
     </Paper>
